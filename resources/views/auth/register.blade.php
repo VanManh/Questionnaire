@@ -65,12 +65,13 @@
 
                             <div class="form-group">
                                 <div class="col-md-6 col-md-offset-4">
-                                    <a class="btn btn-primary" href="{{ route('google.login') }}">
-                                        Google
-                                    </a>
+
                                     <button type="submit" class="btn btn-primary">
                                         Register
                                     </button>
+                                    <a class="btn btn-primary" href="{{ route('google.login') }}">
+                                        By Google
+                                    </a>
                                 </div>
                             </div>
                         </form>

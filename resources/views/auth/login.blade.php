@@ -46,7 +46,6 @@
                                             <input type="checkbox"
                                                    name="remember" {{ old('remember') ? 'checked' : ''}}> Remember Me
                                             &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-                                            <div class="fb-login-button" data-max-rows="1" data-size="large" data-show-faces="false" data-auto-logout-link="false"></div>
                                         </label>
                                     </div>
                                 </div>

@@ -17,7 +17,6 @@ use Symfony\Component\Console\Question\Question;
 
 class QuestionController extends Controller
 {
-
     private $modelQuestion;
     private $modelAnswer;
     private $classQuestion;

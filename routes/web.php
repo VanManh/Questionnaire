@@ -14,13 +14,13 @@
 Route::get('/', function () {
     return view('welcome');
 });
-Route::get('/home', 'SurveyController@index')->name('home');
+
 Auth::routes();
 
 Route::get('/google/redirect', 'Auth\AuthController@redirectToProvider')->name('google.login');
 Route::get('/google/callback', 'Auth\AuthController@handleProviderCallback');
 Route::group(['middleware' => 'auth'], function(){
-
+    Route::get('/home', 'SurveyController@index')->name('home');
     Route::get('/add-survey', 'SurveyController@GetAddSurvey' )->name('GetAddSurvey');
     Route::post('/add-survey', 'SurveyController@PostAddSurvey' )->name('PostAddSurvey');
 
